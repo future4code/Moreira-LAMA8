@@ -1,0 +1,37 @@
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+    "name": "lucas",
+    "email": "lucas@gmail.com",
+    "password": "12345678",
+    "role": "NORMAL"
+}
+
+
+###
+
+GET http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+	"email": "lucas@gmail.com",
+	"password": "12345678"
+}
+
+###
+
+POST http://localhost:3003/user/band
+Content-Type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjM1NDM2ZDNiLTkwZmItNGQzNC05ZTM2LTgzOGMzMmYwZWIwYyIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NTI0NzYwMDYsImV4cCI6MTY1MjQ3NzQ0Nn0.POxMn1XuUW97neqpmup9DvjHyWWCkK2Sd-q3kYh8bEg
+
+{
+    "name": "Raimundos",
+    "music_genre": "rock",
+    "responsible": "Digao"
+}
+
+###
+
+GET http://localhost:3003/user/band/a3c203ce-f324-4638-9799-0d9eac9def3c
+Content-Type: application/json
